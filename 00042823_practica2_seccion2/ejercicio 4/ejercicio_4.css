@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    grid-template-columns: 
+        1fr 1fr
+        minmax(10px, 1fr) 3fr
+        repeat(5, 1fr)
+        50px auto 100px 1fr;
+
+    /* uh... lets try breaking this down...
+    grid-template-columns solo define el espacio de las columnas...
+        1fr 1fr = dos columnas iguales, cada una toma la mitad del espacio disponible
+        minmax(10px, 1fr) = una columna que toma al menos 10px pero puede crecer hasta 1fr
+        3fr = una columna que toma 3 veces el espacio de 1fr
+        repeat(5, 1fr) = cinco columnas iguales, cada una toma 1fr
+        50px = una columna fija de 50px
+        auto = una columna que toma el espacio necesario para su contenido
+        100px = una columna fija de 100px
+        1fr = una columna que toma el espacio restante disponible
+    */
+}
+
+.item {
+    flex-grow: 1;
+}
+
+.item-2 {
+    flex-grow: 2;
+}
+
+/* ahora que se está usando grid... flex-grow no hace nada, creo */
