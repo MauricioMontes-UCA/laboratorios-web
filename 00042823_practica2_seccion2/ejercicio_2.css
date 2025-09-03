@@ -1,0 +1,19 @@
+.container {
+    display: flex; /* habilitando flexbox */
+    flex-direction: row; /* dirección en columna */
+    flex-wrap: wrap; /* habilitando wrap */
+    gap: 10px; /* espacio entre elementos */
+    gap: 10px 20px; /* espacio entre filas y columnas */
+    row-gap: 10px; /* espacio entre filas */
+    column-gap: 20px; /* espacio entre columnas */
+}
+
+.item {
+    flex-grow: 1;  /* todos los elementos crecen igual */
+}
+
+.item-2 {
+    flex-grow: 2; /* este elemento crece el doble */
+}
+
+/* flex-grow se parece un poco a la medida fr de grid en mi opinión */
